@@ -62,7 +62,13 @@ header button:hover{
 
 section{
    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-   padding: 16px 16px 16px 16px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.wrapper{
+    padding: 16px 16px 16px 16px;
    display: flex;
    flex-direction: column;
    align-items:  center;
@@ -232,6 +238,10 @@ footer button:hover{
     }
 
     section{
+        margin-top: 65px;
+    }
+
+    .wrapper{
         margin-top: 186px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -268,8 +278,8 @@ footer button:hover{
 
     }
     
-    section{
-        max-width: 1750px;
+    .wrapper{
+        max-width: 1110px;
     }   
 
     header{
@@ -319,7 +329,7 @@ footer button:hover{
     }
 
     section{
-        padding: 0px 165px 140px 165px;
+        padding: 0px 0px 140px 0px;
     }
 
     .card-header {
