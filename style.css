@@ -11,18 +11,18 @@
 }
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
-    width: 375px;
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: white;
+
 }
 
 main{
     flex-direction: column;
     display: flex;
-    justify-content: space-between;
-    padding: 16px;
+    justify-content: center;
 }
 
 header{
@@ -55,6 +55,18 @@ header button{
     line-height:28px;
 }
 
+section{
+   background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+   padding: 16px 16px 16px 16px;
+   display: flex;
+   flex-direction: column;
+   align-items:  center;
+}
+
+.budget{
+    max-width: 398px;
+}
+
 .budgeth{
     font-size: 40px;
     line-height: 50.4px;
@@ -63,8 +75,10 @@ header button{
     margin-bottom: 26px;
 }
 
-.budget{
-    /* padding: 16px; */
+.budget-container{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 0px 16px
 }
 
 .budgetp{
@@ -122,6 +136,7 @@ header button{
     border-radius: 10px;
     padding: 0px 20px 0px 20px;
     margin-bottom: 44px;
+    max-width: 339px;
 }
 
 .card-text-container-h{
@@ -181,4 +196,48 @@ footer button{
     font-weight:700;
     font-size:16px;
     line-height:28px;
+}
+
+/* tablet version */
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+        background-image: url(assets/image-hero-tablet.png);
+        background-repeat: no-repeat;
+        background-position: top -80px right -275px;
+    }
+
+    header{
+        padding: 0;
+        margin-top: 24px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    section{
+        margin-top: 186px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 11px;
+    }
+
+    .budget{
+        justify-self: unset; 
+        flex-basis: 50%;
+        margin-top: 99px;
+    }
+
+    .budget-container{
+        flex-direction: row;
+    }
+    
+    .photo-container{
+        display: none;
+    }
+
+    .card-header{
+        height: 259px;
+    }
 }
