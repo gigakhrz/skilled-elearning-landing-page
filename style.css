@@ -55,6 +55,11 @@ header button{
     line-height:28px;
 }
 
+header button:hover{
+    background-color: hsla(234, 25%, 52%, 1);
+    cursor: pointer;
+}
+
 section{
    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
    padding: 16px 16px 16px 16px;
@@ -101,6 +106,12 @@ section{
     line-height: 26px;
     color: white;
     margin-bottom: 46px;
+}
+
+.budgetbutton:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+     linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    cursor: pointer;
 }
 
 .herro{
@@ -198,11 +209,16 @@ footer button{
     line-height:28px;
 }
 
+footer button:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+     linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+     cursor: pointer;
+}
+
 /* tablet version */
 
 @media screen and (min-width: 768px) {
     body{
-        background-color: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
         background-image: url(assets/image-hero-tablet.png);
         background-repeat: no-repeat;
         background-position: top -80px right -275px;
@@ -240,4 +256,105 @@ footer button{
     .card-header{
         height: 259px;
     }
+}
+
+    /* desktop version */
+
+@media screen and (min-width: 1024px){
+    
+    body{
+        background-image: url(./assets/image-hero-desktop.png);
+        background-position: top -80px right -400px;
+
+    }
+    
+    section{
+        max-width: 1750px;
+    }   
+
+    header{
+        margin-left: 165px;
+        margin-right: 165px;
+    }
+
+    header h2{
+    font-size: 36px;
+    line-height: 45.36px;
+    color: var(--heading);
+    margin-top: 6px;
+    margin-bottom: 7px;
+    }
+ 
+    header button{
+        width: 167px;
+        height: 56px;
+        font-size:18px;
+    }
+
+    .budget-container{
+        padding: 165px 165px 0px 165px;
+    }
+
+    .budget{
+        min-width: 457px;
+        max-width: 457px;
+        margin-top: 0px;
+    }
+
+    .budgeth{
+        font-size: 56px;
+        line-height: 70.56px;
+        margin-bottom: 29px;
+    }
+
+    .budgetp{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .budgetbutton{
+        height: 63px;
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+    section{
+        padding: 0px 165px 140px 165px;
+    }
+
+    .card-header {
+        min-height: 322px;
+        max-height: 322px;
+        min-width: 350px;
+        max-width: 350px;
+    }
+
+    .card{
+        min-height: 346px;
+        max-height: 346px;
+        min-width: 350px;
+        max-width: 350px;
+
+        padding: 0px 32px 40px 32px;
+    }
+
+    .card-text-container-h{
+        margin-top: 65px;
+    }
+
+    footer{
+        padding:32px 165px;
+    }
+
+    footer h2{
+    font-size: 36px;
+    line-height: 45px;
+    }
+
+    footer button{
+        height: 56px;
+        width: 167px;
+        font-size: 18px;
+    }
+
 }
